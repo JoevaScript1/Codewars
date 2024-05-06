@@ -65,3 +65,17 @@ function nbDig(n, d) {
   }
   return count;
 }
+
+
+
+//Given an integer as input, can you round it to the next (meaning, "greater than or equal") multiple of 5?
+
+function roundToNext5(num) {
+  if (num === 0) {
+    return num;
+  } else if (num > 0) {
+    return Math.ceil(num / 5) * 5;
+  } else {
+    return Math.ceil(num / 5) * 5;
+  }
+}
