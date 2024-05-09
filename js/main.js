@@ -104,3 +104,28 @@ function saleHotdogs(n){
     return 90 * n
   }
 }
+
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
+// do this in js
+
+function shortestWordLength(str) {
+  // Split the string into an array of words
+  const words = str.split(" ");
+  
+  // Initialize shortestLength with the length of the first word
+  let shortestLength = words[0].length;
+  
+  // Iterate through the array of words
+  for (let i = 1; i < words.length; i++) {
+      // Update shortestLength if the length of the current word is shorter
+      if (words[i].length < shortestLength) {
+          shortestLength = words[i].length;
+      }
+  }
+  
+  // Return the shortest length found
+  return shortestLength;
+}
+
