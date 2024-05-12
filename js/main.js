@@ -143,3 +143,19 @@ for (i = 1; i <= n; i++){
   }
   return z;
 }
+
+//Given an array of integers your solution should find the smallest integer.
+
+function findSmallestInteger(array) {
+  // Sort the array in ascending order
+  array.sort(function(a, b) {
+      return a - b;
+  });
+  
+  // Return the first element (smallest integer) of the sorted array
+  return array[0];
+}
+
+// Test cases
+console.log(findSmallestInteger([34, 15, 88, 2])); // Output: 2
+console.log(findSmallestInteger([34, -345, -1, 100])); // Output: -345
