@@ -156,6 +156,16 @@ function findSmallestInteger(array) {
   return array[0];
 }
 
-// Test cases
-console.log(findSmallestInteger([34, 15, 88, 2])); // Output: 2
-console.log(findSmallestInteger([34, -345, -1, 100])); // Output: -345
+// Task
+// Given a list of unique numbers sorted in ascending order, return a new list so that the values increment by 1 for each index from the minimum value up to the maximum value (both included).
+
+function pipeFix(numbers){
+  const min = numbers[0]
+  const max = numbers[numbers.length -1]
+  let result = []
+  
+  for (i = min; i <= max; i++){
+    result.push(i)
+  }
+    return result  
+  }
