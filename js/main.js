@@ -156,9 +156,60 @@ function findSmallestInteger(array) {
   return array[0];
 }
 
+
 // Test cases
 console.log(findSmallestInteger([34, 15, 88, 2])); // Output: 2
 console.log(findSmallestInteger([34, -345, -1, 100])); // Output: -345
 
 // Complete the function/method so that it returns the url with anything after the anchor (#) removed.
 const removeUrlAnchor = url => url.split('#')[0];
+
+// Task
+// Given a list of unique numbers sorted in ascending order, return a new list so that the values increment by 1 for each index from the minimum value up to the maximum value (both included).
+
+function pipeFix(numbers){
+  const min = numbers[0]
+  const max = numbers[numbers.length -1]
+  let result = []
+  
+  for (i = min; i <= max; i++){
+    result.push(i)
+  }
+    return result  
+  }
+
+  // Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+
+  class Kata {
+    static getVolumeOfCuboid(length, width, height) { 
+      let volumeOfCuboid = length * width * height
+      return volumeOfCuboid
+      // your code here
+    }
+  }
+
+//   Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+// Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
+function lovefunc(flower1, flower2){
+  return (flower1 % 2 !== flower2 % 2)
+  }
+
+
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
+
+var summation = function (num) {
+  let sum = 0
+for (let i = 1; i <= num; i++){
+  sum += i
+  }
+  return sum
+}
+
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+function simpleMultiplication(number) {
+  return number % 2 == 0 ? number * 8 : number * 9
+  }
+
