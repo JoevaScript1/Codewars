@@ -159,3 +159,6 @@ function findSmallestInteger(array) {
 // Test cases
 console.log(findSmallestInteger([34, 15, 88, 2])); // Output: 2
 console.log(findSmallestInteger([34, -345, -1, 100])); // Output: -345
+
+// Complete the function/method so that it returns the url with anything after the anchor (#) removed.
+const removeUrlAnchor = url => url.split('#')[0];
