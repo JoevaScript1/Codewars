@@ -213,3 +213,19 @@ function simpleMultiplication(number) {
   return number % 2 == 0 ? number * 8 : number * 9
   }
 
+  
+  // Complete the square sum function so that it squares each number passed into it and then sums the results together.
+   
+function squareSum(numbers) {
+    // Initialize the sum variable to 0
+  let sum = 0;
+  
+    // Loop through each argument passed into the function
+  for (let i = 0; i < numbers.length; i++) {
+      // Square the current number and add it to the sum
+    sum += numbers[i] ** 2;
+  }
+  
+    // Return the final sum
+  return sum;
+  }
