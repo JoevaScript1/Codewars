@@ -229,3 +229,13 @@ function squareSum(numbers) {
     // Return the final sum
   return sum;
   }
+
+
+  function boolToWord(bool) {
+    if(bool === true){
+      return "Yes"
+    }
+    else{
+        return "No"
+    }
+  }
