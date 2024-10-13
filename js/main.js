@@ -184,7 +184,6 @@ function pipeFix(numbers){
     static getVolumeOfCuboid(length, width, height) { 
       let volumeOfCuboid = length * width * height
       return volumeOfCuboid
-      // your code here
     }
   }
 
@@ -217,7 +216,7 @@ function simpleMultiplication(number) {
   // Complete the square sum function so that it squares each number passed into it and then sums the results together.
    
 function squareSum(numbers) {
-    // Initialize the sum variable to 0
+  // Initialize the sum variable to 0
   let sum = 0;
   
     // Loop through each argument passed into the function
@@ -229,7 +228,6 @@ function squareSum(numbers) {
     // Return the final sum
   return sum;
   }
-
 
   function boolToWord(bool) {
     if(bool === true){
