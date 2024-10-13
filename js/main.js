@@ -239,3 +239,21 @@ function squareSum(numbers) {
         return "No"
     }
   }
+
+
+
+//   In this kata you are required to, given a string, replace every letter with its position in the alphabet. If anything in the text isn't a letter, ignore it and don't return it.
+  function alphabetPosition(text) {
+    return text
+      .toLowerCase()
+      .split('')
+      .map(char => {
+        let code = char.charCodeAt(0)
+        if (code >= 97 && code <= 122) {
+          return code - 96
+        }
+        return ''
+      })
+      .filter(char => char !== '')
+      .join(' ')
+    }
