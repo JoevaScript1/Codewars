@@ -258,7 +258,7 @@ function squareSum(numbers) {
 
 
 
-    // Given a point in a Euclidean plane (x and y), return the quadrant the point exists in: 1, 2, 3 or 4 (integer). x and y are non-zero integers, therefore the given point never lies on the axes
+    // Given a point in a Euclidean plan, return the quadrant the point exists in: 1, 2, 3 or 4 (integer). x and y are non-zero integers, therefore the given point never lies on the axes
 
 function quadrant(x, y) {
   if (x < 0 && y < 0){
@@ -273,4 +273,23 @@ function quadrant(x, y) {
   else{
     return(1)
   }
+}
+
+
+
+function lengthOfVine(n, height, radius) {
+  // Step 1: Calculate circumference
+  let circ = Math.PI * 2 * radius;
+
+  // Step 2: Calculate height per turn
+  let heightPerTurn = height / n;
+
+  // Step 3: Calculate length of vine in one turn using Pythagorean theorem
+  let lengthPerTurn = Math.sqrt(circ**2 + heightPerTurn**2);
+
+  // Step 4: Total length of the vine
+  let totalLength = n * lengthPerTurn;
+
+  // Step 5: Round to 2 decimal places
+  return parseFloat(totalLength.toFixed(2));
 }
