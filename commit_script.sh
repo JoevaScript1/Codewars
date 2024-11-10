@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define the start and end dates
-start_date="2023-01-01"
-end_date="2023-12-31"
+start_date="2023-12-31"
+end_date="2024-11-08"
 
 # Loop through each day in the date range
 current_date="$start_date"
