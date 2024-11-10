@@ -293,3 +293,11 @@ function lengthOfVine(n, height, radius) {
   // Step 5: Round to 2 decimal places
   return parseFloat(totalLength.toFixed(2));
 }
+
+
+//Remove Spaces
+function noSpace(x){
+  x = x.split(' ').join('')
+  return x
+
+}
