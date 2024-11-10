@@ -1,3 +1,6 @@
+const simpleGit = require('simple-git');
+const git = simpleGit();
+
 // Implement a function which convert the given boolean value into its string representation.
 
 // Note: Only valid inputs will be given.
@@ -301,3 +304,5 @@ function noSpace(x){
   return x
 
 }
+
+//test
