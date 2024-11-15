@@ -281,10 +281,24 @@ function lengthOfVine(n, height, radius) {
 }
 
 //Remove Spaces
-function noSpace(x){
-  x = x.split(' ').join('')
-  return x
-
+function noSpace(x) {
+  x = x.split(" ").join("");
+  return x;
 }
 
 //test
+
+function fakeBin(x) {
+  let numArray = x.split(""); // Split the string into individual characters
+  let result = "";
+
+  for (let i = 0; i < numArray.length; i++) {
+    if (Number(numArray[i]) < 5) {
+      result += "0"; // Append '0' to result if the digit is less than 5
+    } else {
+      result += "1"; // Append '1' otherwise
+    }
+  }
+
+  return result; // Return the resulting binary string
+}
