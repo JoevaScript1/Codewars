@@ -305,4 +305,19 @@ function noSpace(x){
 
 }
 
-//test
+
+function remove(s,n){
+  let count = 0;
+  let result = ''
+  
+for (let char of s) {
+    if (char === '!' && count < n) {
+      count++;
+      continue; // Skip adding this '!' to the result
+    }
+    result += char;
+  }
+
+  return result;
+}
+
