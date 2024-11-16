@@ -302,3 +302,7 @@ function fakeBin(x) {
 
   return result; // Return the resulting binary string
 }
+
+function check(a, x) {
+  return a.includes(x);
+}
