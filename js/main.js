@@ -306,3 +306,20 @@ function fakeBin(x) {
 function check(a, x) {
   return a.includes(x);
 }
+
+function correct(string){
+	checkStr = string.split('')
+  for (i = 0; i < checkStr.length; i++){
+    if (checkStr[i] == '5'){
+      checkStr[i] = 'S'
+    }
+     if (checkStr[i] == '1'){
+      checkStr[i] = 'I'
+    }
+     if (checkStr[i] == '0'){
+      checkStr[i] = 'O'
+       console.log(checkStr)
+    }
+  } 
+  return checkStr.join('')  
+}
