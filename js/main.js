@@ -307,19 +307,34 @@ function check(a, x) {
   return a.includes(x);
 }
 
-function correct(string){
-	checkStr = string.split('')
-  for (i = 0; i < checkStr.length; i++){
-    if (checkStr[i] == '5'){
-      checkStr[i] = 'S'
+function correct(string) {
+  checkStr = string.split("");
+  for (i = 0; i < checkStr.length; i++) {
+    if (checkStr[i] == "5") {
+      checkStr[i] = "S";
     }
-     if (checkStr[i] == '1'){
-      checkStr[i] = 'I'
+    if (checkStr[i] == "1") {
+      checkStr[i] = "I";
     }
-     if (checkStr[i] == '0'){
-      checkStr[i] = 'O'
-       console.log(checkStr)
+    if (checkStr[i] == "0") {
+      checkStr[i] = "O";
+      console.log(checkStr);
     }
-  } 
-  return checkStr.join('')  
+  }
+  return checkStr.join("");
+}
+
+function stringy(size) {
+  let result = ""; // Initialize an empty string to store the result
+  for (let i = 0; i < size; i++) {
+    // Loop from 0 to size
+    if (i % 2 === 0) {
+      // If `i` is even, add '1' to the result
+      result += "1";
+    } else {
+      // If `i` is odd, add '0' to the result
+      result += "0";
+    }
+  }
+  return result; // Return the resulting string
 }
