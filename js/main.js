@@ -338,3 +338,7 @@ function stringy(size) {
   }
   return result; // Return the resulting string
 }
+
+function nameShuffler(str){
+  return str.split(' ').reverse().join(' ')
+}
