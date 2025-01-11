@@ -367,14 +367,17 @@ function getDrinkByProfession(param) {
 
 //Update
 
-function derive(coefficient,exponent) {
-  return (coefficient * exponent).toString() + "x^" + (exponent - 1).toString()
-  
+function derive(coefficient, exponent) {
+  return (coefficient * exponent).toString() + "x^" + (exponent - 1).toString();
 }
 
 function testEven(n) {
-  if (n % 2 == 0){
-    return true
-  }
-  else return false
+  if (n % 2 == 0) {
+    return true;
+  } else return false;
+}
+
+function sumTwoSmallestNumbers(numbers) {
+  numbers.sort((a, b) => a - b);
+  return numbers[0] + numbers[1];
 }
