@@ -399,3 +399,25 @@ function grow(x) {
   }
   return product;
 }
+
+function electionsWinners(votes, k) {
+  const maxVotes = Math.max(...votes); // Find the highest current votes
+  const maxVotesCount = votes.filter((v) => v === maxVotes).length; // Count how many candidates have max votes
+  let count = 0;
+
+  for (let i = 0; i < votes.length; i++) {
+    let maxPossibleVotes = votes[i] + k; // Max votes candidate i can reach
+
+    // If no votes left, check if there's already a single winner
+    if (k === 0) {
+      return maxVotesCount === 1 ? 1 : 0; // If one leader, they win; if tied, return 0
+    }
+
+    // If a candidate can exceed the current max votes, count them
+    if (maxPossibleVotes > maxVotes) {
+      count++;
+    }
+  }
+
+  return count;
+}
