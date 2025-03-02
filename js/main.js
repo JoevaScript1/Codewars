@@ -381,3 +381,11 @@ function sumTwoSmallestNumbers(numbers) {
   numbers.sort((a, b) => a - b);
   return numbers[0] + numbers[1];
 }
+
+function grow(x) {
+  let product = 1;
+  for (i = 0; i < x.length; i++) {
+    product *= x[i];
+  }
+  return product;
+}
