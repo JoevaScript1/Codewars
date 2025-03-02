@@ -382,6 +382,16 @@ function sumTwoSmallestNumbers(numbers) {
   return numbers[0] + numbers[1];
 }
 
+function countSheeps(sheep) {
+  let sheepcount = 0;
+  for (n = 0; n < sheep.length; n++) {
+    if (sheep[n] == true) {
+      sheepcount += 1;
+    }
+  }
+  return sheepcount;
+}
+
 function grow(x) {
   let product = 1;
   for (i = 0; i < x.length; i++) {
