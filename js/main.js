@@ -421,3 +421,15 @@ function electionsWinners(votes, k) {
 
   return count;
 }
+
+function queueTime(customers, n) {
+  let tills = Array(n).fill(0);
+  console.log(tills);
+  console.log(n);
+  for (let time of customers) {
+    let minIndex = tills.indexOf(Math.min(...tills));
+    tills[minIndex] += time;
+    console.log(...tills);
+  }
+  return Math.max(...tills);
+}
