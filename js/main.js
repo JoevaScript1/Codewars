@@ -441,7 +441,6 @@ function checkForFactor (base, factor) {
 
 function isTriangle(a,b,c){
   const arr = [a, b, c]
-  arr.sort()
+  arr.sort((x,y) =>(x - y))
   return arr[0] + arr[1] > arr[2]
-
 }
