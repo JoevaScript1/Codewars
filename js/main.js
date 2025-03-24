@@ -438,3 +438,10 @@ function queueTime(customers, n) {
 function checkForFactor (base, factor) {
   return base % factor == 0
 }
+
+function isTriangle(a,b,c){
+  const arr = [a, b, c]
+  arr.sort()
+  return arr[0] + arr[1] > arr[2]
+
+}
