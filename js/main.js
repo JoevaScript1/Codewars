@@ -433,3 +433,8 @@ function queueTime(customers, n) {
   }
   return Math.max(...tills);
 }
+
+
+function checkForFactor (base, factor) {
+  return base % factor == 0
+}
