@@ -444,3 +444,15 @@ function isTriangle(a,b,c){
   arr.sort((x,y) =>(x - y))
   return arr[0] + arr[1] > arr[2]
 }
+
+function sum (numbers) {
+  let sum = 0
+  if (numbers.length == 0){
+    return 0
+  }
+  for (let i=0; i < numbers.length; i++){
+    sum += numbers[i]
+    console.log()
+  }
+  return sum
+}
