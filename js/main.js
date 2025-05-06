@@ -461,3 +461,10 @@ function doubleInteger(i) {
   // i will be an integer. Double it and return it.
   return 2 * i;
 }
+
+function invertHash(hash) {
+  const inverted = {};
+  for (const [key, value] of Object.entries(hash))
+  inverted[value] = key
+  return inverted
+}
